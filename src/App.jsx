@@ -11,7 +11,7 @@ function App() {
   // Update the QR Code URL when word, size, or bgColor changes
   useEffect(() => {
     setQrCode(
-      `http://api.qrserver.com/v1/create-qr-code/?data=${word}!&size=${size}x${size}&bgcolor=${bgColor}`
+      `http://api.qrserver.com/v1/create-qr-code/?data=${word}&size=${size}x${size}&bgcolor=${bgColor}`
     );
   }, [word, size, bgColor]);
 
